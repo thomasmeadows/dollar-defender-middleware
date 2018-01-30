@@ -1,6 +1,6 @@
 {
   "name": "dollar-defender-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dollar Defender Middleware protects against Dollar $ injection attacks for Sequelize, Waterline, and Mongoose",
   "main": "index.js",
   "scripts": {

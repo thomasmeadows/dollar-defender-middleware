@@ -5,6 +5,12 @@ This is a very simple module that checks req.params, req.body and req.query for 
 
 The primary reason for this is because sometimes coders forget to right validators for route and this can be a huge security issue as described in this article at https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html
 
+### install
+```javascript
+  npm install dollar-defender-middleware
+```
+
+### usage
 To use this module simple initialize it after your json parser.
 ```javascript
   const dollarDefender = require('dollar-defender-middleware');
@@ -23,6 +29,7 @@ A config object can be passed in with the following otpional settings
   }
 ```
 
+### development
 Run test for developing in the normal way
 ```
   npm run test
