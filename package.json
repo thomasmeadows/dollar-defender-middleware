@@ -1,0 +1,32 @@
+{
+  "name": "dollar-defender-middleware",
+  "version": "0.0.1",
+  "description": "Dollar Defender Middleware protects against Dollar $ injection attacks for Sequelize, Waterline, and Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape -r babel-register tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmeadows/dollar-defendender-middleware.git"
+  },
+  "keywords": [
+    "dollar",
+    "injection",
+    "preventation",
+    "express",
+    "sequelize",
+    "waterline",
+    "mongoose"
+  ],
+  "author": "Thomas J Meadows",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomasmeadows/dollar-defendender-middleware/issues"
+  },
+  "homepage": "https://github.com/thomasmeadows/dollar-defendender-middleware#readme",
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "tape": "^4.8.0"
+  }
+}
