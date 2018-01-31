@@ -3,7 +3,7 @@ Dollar defender middleware is express middleware protects against Dollar $ injec
 
 This is a very simple module that checks req.params, req.body and req.query for objects and recursively scans for the $ symbol as the first property key and responds with an error if it is detected.
 
-The primary reason for this is because sometimes coders forget to right validators for route and this can be a huge security issue as described in this article at https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html
+The primary reason for this is because sometimes coders forget to write validators for route and this can be a huge security issue as described in this article at https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html
 
 ### install
 ```javascript
@@ -11,14 +11,14 @@ The primary reason for this is because sometimes coders forget to right validato
 ```
 
 ### usage
-To use this module simple initialize it after your json parser.
+To use this module, simply initialize it after your json parser.
 ```javascript
   const dollarDefender = require('dollar-defender-middleware');
   app.use(bodyParser.json());
   app.use(dollarDefender(/* optionional config object */));
 ```
 
-A config object can be passed in with the following otpional settings
+A config object can be passed in with the following optional settings
 ```javascript
   {
     statusCode: 500,
