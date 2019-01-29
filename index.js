@@ -1,10 +1,12 @@
 function recursiveDollarSearch(objectToTest) {
   var dollarFound = false;
   for(var key in objectToTest) {
-    if(typeof objectToTest[key] === 'object') {
-      dollarFound = recursiveDollarSearch(objectToTest[key]);
-    } else if(key.indexOf('$') === 0) {
+    if(key.indexOf('$') === 0) {
       dollarFound = true;
+      break;
+    }
+    if(objectToTest[key] && typeof objectToTest[key] === 'object') {
+      dollarFound = recursiveDollarSearch(objectToTest[key]);
     }
     if(dollarFound) {
       break;
